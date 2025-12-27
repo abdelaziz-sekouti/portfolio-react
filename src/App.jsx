@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 import './App.css'
 
 function App() {
@@ -363,38 +364,30 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className="flex space-x-4 pt-4">
+              {/* <div className="flex space-x-4 pt-4">
                 <a
                   href="https://www.linkedin.com/feed/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300"
-                >
-                  LinkedIn
-                </a>
+                ></a>
                 <a
                   href="https://github.com/abdelaziz-sekouti"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300"
-                >
-                  GitHub
-                </a>
+                ></a>
                 <a
                   href="https://www.youtube.com/@autodidactewebdev2368"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all duration-300"
-                >
-                  YouTube
-                </a>
+                ></a>
                 <button
                   onClick={() => openWhatsApp('Hi! I found your portfolio and would like to connect.')}
                   className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center hover:bg-green-700 transition-all duration-300"
-                >
-                  WhatsApp
-                </button>
-              </div>
+                ></button>
+              </div> */}
             </div>
             <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
               <h3 className="text-xl font-semibold mb-4">Send Me a Message</h3>
@@ -448,36 +441,36 @@ function App() {
               <p>&copy; {new Date().getFullYear()} Sekouti. All rights reserved.</p>
               <p className="text-sm text-gray-400">Designed with React & Tailwind CSS</p>
             </div>
-            <div className="flex space-x-6">
+            <div className="flex space-x-4">
               <a
                 href="https://www.linkedin.com/feed/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-purple-400 transition-colors duration-300"
+                className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
               >
-                LinkedIn
+                <i className="fab fa-linkedin-in"></i>
               </a>
               <a
                 href="https://github.com/abdelaziz-sekouti"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-purple-400 transition-colors duration-300"
+                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-white hover:bg-gray-900 transition-all duration-300 transform hover:scale-110 shadow-lg"
               >
-                GitHub
+                <i className="fab fa-github"></i>
               </a>
               <a
                 href="https://www.youtube.com/@autodidactewebdev2368"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-purple-400 transition-colors duration-300"
+                className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center text-white hover:bg-red-700 transition-all duration-300 transform hover:scale-110 shadow-lg"
               >
-                YouTube
+                <i className="fab fa-youtube"></i>
               </a>
               <button
                 onClick={() => openWhatsApp('Hi! I found your portfolio and would like to connect.')}
-                className="text-green-400 hover:text-green-300 transition-colors duration-300"
+                className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white hover:bg-green-600 transition-all duration-300 transform hover:scale-110 shadow-lg"
               >
-                WhatsApp
+                <i className="fab fa-whatsapp"></i>
               </button>
             </div>
           </div>
