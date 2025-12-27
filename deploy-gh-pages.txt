@@ -1,0 +1,10 @@
+first git init
+then in gitignore uncomment dist folder
+then install gh-pages . npm i gh-pages
+in vite.config
+add base:"/<ripo_name>"
+in package.json add 
+'hompage':"https://<yourname>/gihub.io/<ripo_name>"
+scripts:
+'predeploy':"npm run build",
+'deploy':"gh-pages -d dist "
