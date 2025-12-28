@@ -129,10 +129,10 @@ function App() {
               </div>
             </div>
             <div className="flex justify-center animate-fade-in-right">
-              <div className="w-80 h-80 rounded-full bg-linear-to-br from-purple-600 to-pink-600 p-1 animate-float">
+              <div className="w-80 h-80 rounded-full bg-linear-to-br from-purple-600 to-pink-600 p-1 animate-float overflow-hidden">
                 <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center">
                   {/* <div className="text-6xl">👨‍💻</div> */}
-                  <img src={portfolio} alt="abdelaziz sekouti" />
+                  <img src={portfolio} alt="abdelaziz sekouti" className='w-100 h-78  object-fit'/>
                 </div>
               </div>
             </div>
